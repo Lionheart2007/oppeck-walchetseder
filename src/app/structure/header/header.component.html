@@ -1,0 +1,15 @@
+<div class="flex justify-center gap-8 p-12">
+  @for (entry of entries; track $index) {
+  <div class="group flex flex-col items-center cursor-pointer overflow-clip">
+    <p
+      class="text-lg text-muted group-hover:text-primary transition-colors"
+      [routerLink]="['/', 'behandlungx']"
+    >
+      {{ entry.text }}
+    </p>
+    <div
+      class="h-1 w-2 rounded bg-primary opacity-0 group-hover:opacity-100 transition-opacity"
+    ></div>
+  </div>
+  }
+</div>
