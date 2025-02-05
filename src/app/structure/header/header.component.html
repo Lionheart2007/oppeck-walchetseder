@@ -3,6 +3,7 @@
   <div class="group flex flex-col items-center cursor-pointer overflow-clip">
     <p
       class="text-lg text-muted group-hover:text-primary transition-colors"
+      [ngClass]="active == (entry.path[1] || '') ? 'text-primary' : ''"
       (click)="navigate(entry.path)"
     >
       {{ entry.text }}
