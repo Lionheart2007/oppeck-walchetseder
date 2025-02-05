@@ -1,0 +1,15 @@
+<div class="content-container flex flex-col gap-8 pt-16">
+  <h2 class="text-3xl font-bold text-primary">Galerie</h2>
+  <p class="text-lg text-primary">
+    Eindrücke aus der Gruppenpraxis für Innere Medizin Oppeck &amp;
+    Walchetseder!
+  </p>
+  <div class="flex flex-col gap-16">
+    @for (category of categories; track $index) {
+    <div class="">
+      <h3 class="text-2xl font-bold text-primary pb-4">{{ category.title }}</h3>
+      <app-image-list [images]="category.images"></app-image-list>
+    </div>
+    }
+  </div>
+</div>
