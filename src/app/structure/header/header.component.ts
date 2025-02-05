@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink],
+  imports: [],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
@@ -16,4 +16,12 @@ export class HeaderComponent {
     { text: 'Galerie', path: ['/', 'galerie'] },
     { text: 'Kontakt', path: ['/', 'kontakt'] },
   ];
+
+  constructor(
+    private router: Router
+  ) {}
+
+  navigate(path: string[]) {
+    this.router.navigate(path);
+  }
 }
