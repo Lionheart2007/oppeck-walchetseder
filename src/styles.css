@@ -4,5 +4,5 @@
 @tailwind utilities;
 
 .content-container {
-  @apply p-16 md:px-[10%] lg:px-[17%];
+  @apply p-4 sm:p-16 md:px-[10%] lg:px-[25%];
 }

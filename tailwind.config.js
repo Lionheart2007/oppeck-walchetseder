@@ -7,6 +7,9 @@ module.exports = {
         primary: {
           DEFAULT: "#2c4ca2",
         },
+        primarytext: {
+          DEFAULT: "#182a5c",
+        },
         secondary: {
           DEFAULT: "#3b82f6",
         },
