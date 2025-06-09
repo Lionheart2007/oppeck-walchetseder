@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
   entries: { text: string; path: string[] }[] = [
-    { text: 'Start', path: ['/'] },
+    { text: 'Über Uns', path: ['/'] },
     { text: 'Behandlungen', path: ['/', 'behandlungen'] },
     { text: 'Team', path: ['/', 'team'] },
     { text: 'Galerie', path: ['/', 'galerie'] },

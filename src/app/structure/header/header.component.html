@@ -2,7 +2,7 @@
   @for (entry of entries; track $index) {
   <div class="group flex flex-col items-center cursor-pointer overflow-clip">
     <p
-      class="text-lg text-muted group-hover:text-primary transition-colors"
+      class="text-lg text-muted group-hover:text-primary transition-colors select-none"
       [ngClass]="active == (entry.path[1] || '') ? 'text-primary' : ''"
       (click)="navigate(entry.path)"
     >
