@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import treatments from '../../pages/behandlungen/behandlungen.json';
 import { ActivatedRoute } from '@angular/router';
 
@@ -10,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './treatment.component.html',
   styleUrl: './treatment.component.css',
 })
-export class TreatmentComponent {
+export class TreatmentComponent implements OnInit {
   constructor(private route: ActivatedRoute) {}
   public treatment: any = undefined;
 

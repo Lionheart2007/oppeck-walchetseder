@@ -1,0 +1,36 @@
+<div class="content-container">
+  <div class="flex flex-col md:flex-row gap-4">
+    <div
+      class="w-full md:w-1/2 rounded-md shadow-sm overflow-clip relative h-96"
+    >
+      <img
+        class="object-scale-down h-full top-0 absolute z-10 left-1/2 -translate-x-1/2"
+        [src]="'assets/images/' + member.image"
+      />
+      <img
+        class="h-full w-full object-cover blur absolute top-0"
+        [src]="'assets/images/' + member.image"
+      />
+    </div>
+    <div class="md:h-96 md:w-1/2 flex flex-col justify-center">
+      <h2 class="text-secondary font-bold text-lg">{{ member.name }}</h2>
+      <div class="flex flex-wrap gap-2">
+        @for(role of member.roles; track $index) {
+        <p class="p-2 text-sm bg-primary text-white rounded-md">
+          {{ role }}
+        </p>
+        }
+      </div>
+    </div>
+  </div>
+  <div>
+    @for (element of member.body; track $index) {
+    <div class="py-4">
+      @if(element.title != undefined) {
+      <h3 class="font-bold text-secondary text-lg">{{ element.title }}</h3>
+      }
+      <p [innerHTML]="element.body"></p>
+    </div>
+    }
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="content-container">
+  <h2 class="text-3xl font-bold text-primary pb-4">Team</h2>
+  <div class="flex flex-col gap-2">
+    @for(member of team; track $index) {
+    <div
+      [routerLink]="[$index]"
+      class="hover:opacity-80 transition-opacity cursor-pointer flex flex-col md:flex-row min-h-48 overflow-clip bg-white rounded-md border-secondary border-opacity-20 shadow-sm border-[1px]"
+    >
+      <div class="md:w-1/3 overflow-clip relative h-96 md:h-64">
+        <img
+          class="h-full object-contain top-0 absolute z-10 left-1/2 -translate-x-1/2"
+          [src]="'assets/images/' + member.image"
+        />
+        <img
+          class="h-full w-full object-cover blur absolute top-0"
+          [src]="'assets/images/' + member.image"
+        />
+      </div>
+      <div class="md:w-2/3 px-4 py-8 flex flex-col gap-2 justify-center">
+        <p class="font-bold text-secondary text-lg">{{ member.name }}</p>
+        <div class="flex flex-wrap gap-2">
+          @for(role of member.roles; track $index) {
+          <p class="p-2 text-sm bg-primary text-white rounded-md">
+            {{ role }}
+          </p>
+          }
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</div>
