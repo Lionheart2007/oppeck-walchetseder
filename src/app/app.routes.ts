@@ -6,6 +6,7 @@ import { BehandlungenComponent } from './pages/behandlungen/behandlungen.compone
 import { TreatmentComponent } from './common/treatment/treatment.component';
 import { TeamComponent } from './pages/team/team.component';
 import { MemberComponent } from './pages/team/member/member.component';
+import { LinksComponent } from './pages/links/links.component';
 
 export const routes: Routes = [
   { path: '', component: StartComponent },
@@ -25,4 +26,9 @@ export const routes: Routes = [
       { path: ':id', component: MemberComponent },
     ],
   },
+  {
+    path: 'links',
+    component: LinksComponent,
+  },
+  { path: '**', redirectTo: '' },
 ];

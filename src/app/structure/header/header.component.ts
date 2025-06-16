@@ -12,10 +12,11 @@ import { Router } from '@angular/router';
 export class HeaderComponent {
   entries: { text: string; path: string[] }[] = [
     { text: 'Über Uns', path: ['/'] },
-    { text: 'Behandlungen', path: ['/', 'behandlungen'] },
+    { text: 'Leistungen', path: ['/', 'behandlungen'] },
     { text: 'Team', path: ['/', 'team'] },
     { text: 'Galerie', path: ['/', 'galerie'] },
     { text: 'Kontakt', path: ['/', 'kontakt'] },
+    { text: 'Links', path: ['/', 'links'] },
   ];
 
   constructor(private router: Router) {}
