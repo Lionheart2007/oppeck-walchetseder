@@ -5,8 +5,7 @@ const team = [
     roles: ['Fachärztin für Innere Medizin', 'Ärztin für Allgemeinmedizin'],
     body: [
       {
-        body: `geboren am 23. August 1980
-        verheiratet`,
+        body: `geboren am 23. August 1980, verheiratet`,
       },
       {
         title: 'Ausbildung und Berufserfahrung',
@@ -31,8 +30,9 @@ seit 2008 Fortbildungsdiplom<br>
 2009 Diplom der ÖÄK für Psychosoziale Medizin<br>
 2011 Diplom der ÖÄK für Psychosomatische Medizin<br>
 24.6. 2015 Vorsorgeuntersuchung<br>
-2017 Diplom für Raucherberatung nach dem Qualitätsstandard der österreichischen Sozialversicherung 2017 Diplom für Raucherentwöhnung nach dem Qualitätsstandard der österreichischen Sozialversicherung<br>
-9.11. 2017 Disease Management Programm Diabetes Mellitus Typ 2 (DMP DM2) – Therapie aktiv – Diabetes im Griff“ Modul A und 1. Teil Modul B<br>
+2017 Diplom für Raucherberatung nach dem Qualitätsstandard der österreichischen Sozialversicherung<br>
+2017 Diplom für Raucherentwöhnung nach dem Qualitätsstandard der österreichischen Sozialversicherung<br>
+2017 Disease Management Programm Diabetes Mellitus Typ 2 (DMP DM2) – Therapie aktiv – Diabetes im Griff“ Modul A und 1. Teil Modul B<br>
 28.4.2022 Diplom für Echokardiographie der Österreichischen Gesellschaft für Kardiologie 2.12.2022 Zuerkennung der Spezialisierung in fachspezifischer psychosomatischer Medizin<br>
 2011-2023 Universitätslehrgang für Psychotherapeutische Medizin (PSY III, MSc-Lehrgang) an der Donauuniversität Krems<br>
 17.1.2023 Abschluss des Universitätslehrganges für Psychotherapeutische Medizin mit Auszeichnung und Verleihung des akademischen Grades Master of Science<br>`,
