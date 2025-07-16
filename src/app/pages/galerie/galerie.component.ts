@@ -18,7 +18,6 @@ export class GalerieComponent {
         { src: 'assets/images/ordination2.webp', alt: 'Ordination 2' },
         { src: 'assets/images/ordination3.webp', alt: 'Ordination 3' },
         { src: 'assets/images/ordination4.webp', alt: 'Ordination 4' },
-        { src: 'assets/images/ordination5.webp', alt: 'Ordination 5' },
       ],
     },
     {
@@ -27,9 +26,19 @@ export class GalerieComponent {
         { src: 'assets/images/endoskopie1.webp', alt: 'Endoskopie 1' },
         { src: 'assets/images/endoskopie2.webp', alt: 'Endoskopie 2' },
         { src: 'assets/images/endoskopie3.webp', alt: 'Endoskopie 3' },
-        { src: 'assets/images/endoskopie4.webp', alt: 'Endoskopie 4' },
         { src: 'assets/images/endoskopie5.webp', alt: 'Endoskopie 5' },
         { src: 'assets/images/endoskopie6.webp', alt: 'Endoskopie 6' },
+      ],
+    },
+    {
+      title: 'Besprechung',
+      images: [
+        { src: 'assets/images/besprechung1.webp', alt: 'Endoskopie 4' },
+
+        {
+          src: 'assets/images/besprechung2.webp',
+          alt: 'Besprechung 2',
+        },
       ],
     },
     {
